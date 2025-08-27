@@ -32,3 +32,30 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# Next 13
+
+## Серверные и клиентские компоненты
+
+![React components](example-1.webp)
+
+### Правила вложения
+
+- нельзя импортировать серверный компонент внутри клиентского
+- можно пробрасывать серверные компоненты в клиентские как `children`
+
+![Пример страницы](example-2.avif)
+
+Используйте клиентские компоненты когда:
+
+- необходимо использовать хуки
+- когда необходимы обработчики событий на пользовательские действия
+- при использовании браузерного API
+- когда используется классовый компонент
+
+Используйте серверные компоненты, когда:
+
+- вы получаете данные через серверное API
+- когда нужен прямой доступ к ресурсам бэкенда
+- когда используется sensetive информация (ключи API, токены и пр.)
+- когда используются тяжелые зависимости

@@ -1,6 +1,4 @@
 import Link from "next/link";
-import React from "react";
-
 const AboutLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>

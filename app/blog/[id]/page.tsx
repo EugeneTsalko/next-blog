@@ -1,6 +1,4 @@
 import { Metadata } from "next";
-import React from "react";
-
 async function getData(id: string) {
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${id}`,

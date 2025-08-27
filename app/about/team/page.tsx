@@ -1,5 +1,3 @@
-import React from "react";
-
 const TeamPage = () => {
   return <h1>Team Page</h1>;
 };
